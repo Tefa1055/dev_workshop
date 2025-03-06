@@ -3,7 +3,7 @@ class Data:
     Clase con métodos para operaciones y manipulaciones de estructuras de datos.
     Incluye implementaciones y algoritmos para arreglos, listas y otras estructuras.
     """
-        pass 
+
     def invertir_lista(self, lista):
         """
         Invierte el orden de los elementos en una lista sin usar reversed() o lista[::-1].
@@ -123,4 +123,3 @@ class Data:
             list: Matriz transpuesta
         """
         pass
-        
