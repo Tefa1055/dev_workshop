@@ -1,7 +1,7 @@
 class Data:
     """
     Clase con métodos para operaciones y manipulaciones de estructuras de datos.
-    Incluye implementaciones y algoritmos para arreglos, listas y otras estructuras..
+    Incluye implementaciones y algoritmos para arreglos, listas y otras estructuras.
     """
     
     def invertir_lista(self, lista):
@@ -41,7 +41,7 @@ class Data:
         """
         Elimina elementos duplicados de una lista sin usar set().
         Mantiene el orden original de aparición.
-        
+
         Args:
             lista (list): Lista con posibles duplicados
             
