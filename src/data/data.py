@@ -41,7 +41,6 @@ class Data:
         """
         Elimina elementos duplicados de una lista sin usar set().
         Mantiene el orden original de aparición.
-
         Args:
             lista (list): Lista con posibles duplicados
             
