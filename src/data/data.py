@@ -122,4 +122,5 @@ class Data:
         Returns:
             list: Matriz transpuesta
         """
+    
     pass
