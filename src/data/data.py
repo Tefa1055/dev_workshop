@@ -43,6 +43,7 @@ class Data:
         Mantiene el orden original de aparición.
         Args:
     
+
     
     lista (list): Lista con posibles duplicados
             
