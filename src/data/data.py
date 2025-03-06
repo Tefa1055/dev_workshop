@@ -43,7 +43,7 @@ class Data:
         """
         pass
 
-    def merge_ordenado(self, lista1, lista2):
+        def merge_ordenado(self, lista1, lista2):
         """
         Combina dos listas ordenadas en una sola lista ordenada.
         
