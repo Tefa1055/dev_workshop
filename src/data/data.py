@@ -6,7 +6,7 @@ class Data:
     
     def invertir_lista(self, lista):
         """
-        Ivierte el orden de los elementos en una lista sin usar reversed() o lista[::-1].
+        Invierte el orden de los elementos en una lista sin usar reversed() o lista[::-1].
         
         Args:
             lista (list): Lista a invertir
