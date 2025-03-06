@@ -10,7 +10,7 @@ class Data:
         
         Args:
             lista (list): Lista a invertir
-        
+            
         Returns:
             list: Lista con los elementos en orden inverso
         """
@@ -24,7 +24,7 @@ class Data:
         Args:
             lista (list): Lista donde buscar
             elemento: Elemento a buscar
-        
+            
         Returns:
             int: Índice del elemento o -1 si no se encuentra
         """
@@ -37,7 +37,7 @@ class Data:
         
         Args:
             lista (list): Lista con posibles duplicados
-        
+            
         Returns:
             list: Lista sin elementos duplicados
         """
@@ -50,7 +50,7 @@ class Data:
         Args:
             lista1 (list): Primera lista ordenada
             lista2 (list): Segunda lista ordenada
-        
+            
         Returns:
             list: Lista combinada y ordenada
         """
@@ -63,7 +63,7 @@ class Data:
         Args:
             lista (list): Lista a rotar
             k (int): Número de posiciones a rotar
-        
+            
         Returns:
             list: Lista rotada
         """
@@ -75,7 +75,7 @@ class Data:
         
         Args:
             lista (list): Lista de enteros del 1 al n con un número faltante
-        
+            
         Returns:
             int: El número que falta en la secuencia
         """
@@ -88,7 +88,7 @@ class Data:
         Args:
             conjunto1 (list): Posible subconjunto
             conjunto2 (list): Conjunto principal
-        
+            
         Returns:
             bool: True si conjunto1 es subconjunto de conjunto2, False en caso contrario
         """
@@ -118,8 +118,9 @@ class Data:
         
         Args:
             matriz (list): Lista de listas que representa una matriz
-        
+            
         Returns:
             list: Matriz transpuesta
         """
         pass
+        
