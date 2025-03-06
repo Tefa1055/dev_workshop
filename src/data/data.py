@@ -11,7 +11,7 @@ class Data:
             resultado.append(lista[i])
         return resultado
 
-        pass
+    pass
 
     def buscar_elemento(self, lista, elemento):
         """
