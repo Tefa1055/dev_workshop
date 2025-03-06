@@ -123,3 +123,4 @@ class Data:
             list: Matriz transpuesta
         """
         pass
+    
