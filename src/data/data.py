@@ -23,16 +23,15 @@ class Data:
     pass
     
     def eliminar_duplicados(self, lista):
-        """
-        Elimina elementos duplicados de una lista sin usar set().
-        Mantiene el orden original de aparición.
-        
-        Args:
-            lista (list): Lista con posibles duplicados
-            
-        Returns:
-            list: Lista sin elementos duplicados
-        """
+        """Elimina elementos duplicados de una lista manteniendo el orden."""
+        resultado = []
+        vistos = {}
+        for item in lista:
+            if item not in vistos:
+                resultado.append(item)
+                vistos[item] = True
+        return resultado
+    
         pass
     
     def merge_ordenado(self, lista1, lista2):
