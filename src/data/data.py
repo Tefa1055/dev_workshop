@@ -97,10 +97,8 @@ class Data:
 
         pass
     
-    def matriz_transpuesta(self, matriz):
+    
         if not matriz or not matriz[0]:
             return []
         return [[matriz[j][i] for j in range(len(matriz))] for i in range(len(matriz[0]))]
-
-
-pass
+    pass
