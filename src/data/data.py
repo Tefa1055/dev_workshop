@@ -13,13 +13,13 @@ class Data:
     
         pass
     
-        def buscar_elemento(self, lista, elemento):
-            """Busca un elemento en una lista y devuelve su índice o -1 si no existe."""
+    def buscar_elemento(self, lista, elemento):
         for i in range(len(lista)):
             if lista[i] == elemento:
                 return i
-        return -1
-    
+        return -1 
+
+
     pass
     
     def eliminar_duplicados(self, lista):
