@@ -356,7 +356,9 @@ class Geometria:
         if lado <= 0 or apotema <= 0:
             raise ValueError("El lado y la apotema deben ser mayores que cero.")
 
-        return (num_lados * lado * apotema) / 2        
+        perimetro = num_lados * lado
+        area = (perimetro * apotema) / 2
+        return area
     pass
     
     def perimetro_poligono_regular(self, num_lados, lado):
