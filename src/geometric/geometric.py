@@ -265,7 +265,7 @@ class Geometria:
         Returns:
             float: Área de la superficie del cilindro
         """
-        pi = 3.1416
+        pi = 3.14159
         area = 2 * pi * radio * (radio + altura)
         return round(area, 2)
         pass
