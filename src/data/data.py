@@ -23,16 +23,17 @@ class Data:
     pass
     
     def eliminar_duplicados(self, lista):
-        """Elimina elementos duplicados de una lista manteniendo el orden."""
-        resultado = []
-        vistos = {}
-        for item in lista:
-            if item not in vistos:
-                resultado.append(item)
-                vistos[item] = True
-        return resultado
     
-        pass
+        seen = []  # Lista para rastrear elementos únicos
+        resultado = []  # Lista sin duplicados
+
+        for elem in lista:
+            if elem not in seen:  # Solo agregamos si no está en seen
+                seen.append(elem)
+                resultado.append(elem)
+        return resultado
+
+    pass
     
     def merge_ordenado(self, lista1, lista2):
         """Combina dos listas ordenadas en una sola lista ordenada."""
