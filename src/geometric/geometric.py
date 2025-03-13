@@ -184,6 +184,7 @@ class Geometria:
         Returns:
             float: Perímetro del hexágono regular
         """
+        return 6 * lado
         pass
     
     def volumen_cubo(self, lado):
