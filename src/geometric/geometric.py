@@ -316,7 +316,7 @@ class Geometria:
             float: Pendiente de la recta
         """
         if x1 == x2:
-                return None  
+            raise ZeroDivisionError("La pendiente es infinita (línea vertical).")
         return round((y2 - y1) / (x2 - x1), 2)
         pass
     
