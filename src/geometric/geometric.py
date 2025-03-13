@@ -331,6 +331,11 @@ class Geometria:
         Returns:
             tuple: Coeficientes (A, B, C) de la ecuación de la recta
         """
+        if x1 == x2:
+            return (1, 0, -x1)  # Recta vertical x = c
+        m = self.pendiente_recta(x1, y1, x2, y2)
+        b = y1 - m * x1
+        return (-m, 1, -b)
         pass
     
     def area_poligono_regular(self, num_lados, lado, apotema):
