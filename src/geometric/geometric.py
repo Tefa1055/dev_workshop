@@ -337,7 +337,12 @@ class Geometria:
             return (1, 0, -x1)  # Recta vertical x = c
         m = self.pendiente_recta(x1, y1, x2, y2)
         b = y1 - m * x1
-        return (-m, 1, -b)
+        
+        A = -m
+        B = 1
+        C = -b
+        
+        return (round(A, 2), round(B, 2), round(C, 2))
         pass
     
     def area_poligono_regular(self, num_lados, lado, apotema):
