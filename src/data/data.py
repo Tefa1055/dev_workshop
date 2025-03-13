@@ -23,15 +23,20 @@ class Data:
     pass
     
     def eliminar_duplicados(self, lista):
-    
-        seen = []  # Lista para rastrear elementos únicos
-        resultado = []  # Lista sin duplicados
-
+        """
+    Elimina elementos duplicados de una lista sin usar set().
+    Mantiene el orden original de aparición.
+    """
+        resultado = []
+        seen = []
         for elem in lista:
-            if elem not in seen:  # Solo agregamos si no está en seen
-                seen.append(elem)
+        # Usamos una tupla con el tipo de dato para diferenciar 1 y True
+            key = (elem, type(elem))  
+            if key not in seen:
+                seen.append(key)
                 resultado.append(elem)
         return resultado
+
 
     pass
     
