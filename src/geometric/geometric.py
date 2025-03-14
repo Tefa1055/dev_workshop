@@ -356,7 +356,7 @@ class Geometria:
         if lado <= 0 or apotema <= 0:
             raise ValueError("El lado y la apotema deben ser mayores que cero.")
 
-        return (num_lados * lado * apotema) / 2
+        return num_lados * lado * apotema
     pass
     
     
