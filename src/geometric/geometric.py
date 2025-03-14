@@ -359,6 +359,7 @@ class Geometria:
         return (num_lados * lado * apotema) / 2
     pass
     
+    
     def perimetro_poligono_regular(self, num_lados, lado):
         """
         Calcula el perímetro de un polígono regular.
