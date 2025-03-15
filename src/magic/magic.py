@@ -111,6 +111,10 @@ class Magic:
         Returns:
             int: El factorial de n
         """
+        if n < 0:
+            raise ValueError("El número debe ser mayor o igual a 0")
+        return 1 if n == 0 else n * self.factorial(n - 1)
+
         pass
     
     def mcd(self, a, b):
