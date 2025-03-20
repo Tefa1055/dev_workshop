@@ -164,6 +164,7 @@ class Strings:
         Returns:
             str: Cadena descifrada
         """
+        return self.cifrar_cesar(texto, -desplazamiento)
         pass
     
     def encontrar_subcadena(self, texto, subcadena):
