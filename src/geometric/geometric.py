@@ -345,7 +345,7 @@ class Geometria:
         C = -y1 + m * x1  # Despejamos C de la ecuación y = mx + b
 
         return (A, B, C)
-    pass
+    pass 
     
     def area_poligono_regular(self, num_lados, lado, apotema):
         """
