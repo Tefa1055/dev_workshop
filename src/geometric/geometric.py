@@ -333,18 +333,15 @@ class Geometria:
         Returns:
             tuple: Coeficientes (A, B, C) de la ecuación de la recta
         """
-        if x1 == x2:  # Caso de recta vertical (pendiente indefinida)
-            return (1, 0, -x1)  # Forma de ecuación: x = c
-    
-        # Calcular pendiente m
-        m = (y2 - y1) / (x2 - x1)
+        A = y2 - y1
+        B = -(x2 - x1)
+        C = x2 * y1 - x1 * y2
 
-        # Forma general Ax + By + C = 0
-        A = -m
-        B = 1
-        C = -y1 + m * x1  # Despejamos C de la ecuación y = mx + b
+        # Normalizar para que A sea positivo si es posible
+        if A < 0 or (A == 0 and B < 0):
+            A, B, C = -A, -B, -C
 
-        return (A, B, C)
+        return (int(A), int(B), int(C))  # Asegurar que los valores sean enteros
     pass 
     
     def area_poligono_regular(self, num_lados, lado, apotema):
