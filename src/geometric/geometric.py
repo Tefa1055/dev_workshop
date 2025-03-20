@@ -333,9 +333,17 @@ class Geometria:
         Returns:
             tuple: Coeficientes (A, B, C) de la ecuación de la recta
         """
-        A = y2 - y1
-        B = x1 - x2
-        C = -(A * x1 + B * y1)
+        if x1 == x2:  # Caso de recta vertical (pendiente indefinida)
+            return (1, 0, -x1)  # Forma de ecuación: x = c
+    
+        # Calcular pendiente m
+        m = (y2 - y1) / (x2 - x1)
+
+        # Forma general Ax + By + C = 0
+        A = -m
+        B = 1
+        C = -y1 + m * x1  # Despejamos C de la ecuación y = mx + b
+
         return (A, B, C)
     pass
     
